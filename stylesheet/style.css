@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+}
+
+/* HEADER */
+
+header {
+  text-align: center;
+  border-bottom: 1px solid #d0d0d0;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  font-family: 'Permanent Marker', cursive;
+  margin: 0;
+}
+
+ul.anchor-block {
+  list-style: none;
+  padding: 0;
+}
+
+ul.anchor-block li {
+  display: inline-block;
+  margin: 0px 15px;
+}
+
+ul.anchor-block li a {
+  text-decoration: none;
+  color: #555;
+}
+
+ul.anchor-block li a.active {
+  font-weight: 700;
+  color: #F25164;
+}
+
+/* MAIN */
+
+#banner {
+  background-image: url("../images/mr_robot.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+}
+
+#about {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 5vh;
+  text-align: center;
+}
+
+#about > h2 {
+  font-size: 2rem;
+}
+
+#about > img {
+  width: 80%;
+}
+
+#videos {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 5vh;
+}
+
+#videos iframe {
+  width: 100%;
+  height: 400px;
+}
+
+#contact {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 5vh;
+}
+
+#contact img {
+  width: 100%;
+  padding-top: 5vh;
+}
+
+#contact > h2 {
+  font-size: 2rem;
+}
+
+#contact div {
+  border-bottom: 1px solid #d0d0d0;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+footer p {
+  padding: 10px;
+  margin: 0;
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 768px) {
+  
+  /* MAIN */
+  
+  #about {
+    padding: 0 20px;
+  }
+
+  #videos {
+    padding: 0 20px;
+  }
+
+  #videos iframe {
+    height: 315px;
+  }
+
+  #contact {
+    padding: 0 20px;
+  }
+}
