@@ -36,18 +36,102 @@
       <img src="./images/elliot.jpg" alt="Elliot Alderson." />
 
       <h2>Contato</h2>
+      <p>Caso queira saber mais sobre nós, ou tenha alguma dúvida específica sobre nossos serviços, preencha os campos abaixo e entrraremos em contato.</p>
 
-      <div>
-        <h3>Management | Karen Blanche</h3>
-        <p>e-mail: info@mysite.com</p>
-        <p>phone: 123-456-7890</p>
-      </div>
-
-      <div>
-        <h3>PR | That Girl Pr, Sarah Brookstone</h3>
-        <p>e-mail: info@mysite.com</p>
-        <p>phone: 123-456-7890</p>
-      </div>
+      <form action="#" method="get">
+        <table>
+          <!-- Linha 1 -->
+          <tr>
+            <td>
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome" name="nome" placeholder="John Doe" required>
+            </td>
+            <td>
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="john.doe@gmail.com" required>
+            </td>
+            <td>
+              <label for="telefone">Telefone</label>
+              <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+            </td>
+          </tr>
+          <!-- Linha 2 -->
+          <tr>
+            <td>&nbsp</td>
+          </tr>
+          <!-- Linha 3 -->
+          <tr>
+            <td colspan="3">
+              <p>Qual é o seu sexo?</p>
+            </td>
+          </tr>
+          <!-- Linha 4 -->
+          <tr>
+            <td>
+              <input type="radio" name="sexo" id="masculino" value="masculino">
+              <label for="masculino">Masculino</label>
+            </td>
+            <td>
+              <input type="radio" name="sexo" id="femenino" value="femenino">
+              <label for="femenino">Femenino</label>
+            </td>
+            <td>
+              <input type="radio" name="sexo" id="nao-bin" value="nao-bin">
+              <label for="nao-bin">Não binário</label>
+            </td>
+          </tr>
+          <!-- Linha 5 -->
+          <tr>
+            <td>&nbsp</td>
+          </tr>
+          <!-- Linha 6 -->
+          <tr>
+            <td colspan="3">
+              <p>Quais é sua área de interesse? Você pode escolher mais de uma!</p>
+            </td>
+          </tr>
+          <!-- Linha 7 -->
+          <tr>
+            <td>
+              <input type="checkbox" name="red-team" id="red-team">
+              <label for="red-team">Red Team - Offensive Pentesting</label>
+            </td>
+            <td>
+              <input type="checkbox" name="blue-team" id="blue-team">
+              <label for="blue-team">Blue Team - Cyber Defense</label>
+            </td>
+          </tr>
+          <!-- Linha 8 -->
+          <tr>
+            <td>&nbsp</td>
+          </tr>
+          <!-- Linha 9 -->
+          <tr>
+            <td colspan="3">
+              <p>Escreve suas dúvidas abaixo:</p>
+            </td>
+          </tr>
+          <!-- Linha 10 -->
+          <tr>
+            <td colspan="3">
+              <textarea name="mensagem" id="mensagem" cols="80" rows="10"></textarea>
+            </td>
+          </tr>
+          <!-- Linha 11 -->
+          <tr>
+            <td>&nbsp</td>
+          </tr>
+          <!-- Linha 12 -->
+          <tr>
+            <td>
+              <input type="submit" value="Enviar">
+            </td>
+            <td>
+              <input type="reset" value="Resetar Formulário">
+            </td>
+          </tr>
+        </table>        
+      </form>
     </main>
 
     <footer>
