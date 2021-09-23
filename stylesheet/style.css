@@ -11,7 +11,10 @@ body {
 
 header {
   text-align: center;
-  border-bottom: 1px solid #d0d0d0;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  background-color: white;
 }
 
 h1 {
@@ -19,11 +22,13 @@ h1 {
   font-size: 3.5rem;
   font-family: 'Russo One', sans-serif;
   margin: 0;
+  color: #15274C;
 }
 
 ul.anchor-block {
   list-style: none;
-  padding: 0;
+  padding: 5px 0 15px;
+  margin: 0;
 }
 
 ul.anchor-block li {
@@ -56,6 +61,31 @@ ul.anchor-block li a.active {
   background-size: cover;
   background-position: center;
   height: 80vh;
+}
+
+.info {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+
+}
+
+.info h2 {
+  font-family: 'Russo One', sans-serif;
+  font-size: 2em;
+  color: #15274C;
+}
+
+.info p {
+  text-align: justify;
+}
+
+.info img {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 50px;
+  margin: 40px auto;
 }
 
 /* about.html */
@@ -159,11 +189,11 @@ footer p {
 
 /* MEDIA QUERY */
 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
   
   /* MAIN */
-  
-  #about {
+ 
+  .info, #about, #videos, #contact {
     padding: 0 20px;
   }
 
@@ -173,9 +203,5 @@ footer p {
 
   #videos iframe {
     height: 315px;
-  }
-
-  #contact {
-    padding: 0 20px;
   }
 }
